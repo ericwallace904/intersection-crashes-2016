@@ -17,6 +17,39 @@ function setStyle(feature) {
 
 L.geoJson(counties, {style: setStyle}).addTo(map);
 
+var navDuval = L.Toolbar2.Action.extend({
+	options: {
+		toolbarIcon: {
+			html: 'Duval County',
+			tooltip: 'Duval County'
+		}
+	},
+	
+	addHooks: function() {
+		map.setView([30.364,-81.652],10);
+	}
+});
+
+var navClay = L.Toolbar2.Action.extend({
+	options: {
+		toolbarIcon: {
+			html: 'Clay County',
+			tooltip: 'Clay County'
+		}
+	},
+	
+	addHooks: function() {
+		map.setView([30.077,-81.801],12);
+	}
+});
+
+
+
+new L.Toolbar2.Control({
+	position: "topright",
+	actions: [navDuval,navClay]
+}).addTo(map)
+
 for (var num = 0; num < intersections.length; num++) {
 	var intersection = intersections[num];
 	var intersection_lat = intersection["latitude"];
