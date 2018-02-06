@@ -20,7 +20,8 @@ L.geoJson(counties, {style: setStyle}).addTo(map);
 var navDuval = L.Toolbar2.Action.extend({
 	options: {
 		toolbarIcon: {
-			html: 'Duval County',
+			html: 'Duval&nbsp;County',
+			className: "cNav",
 			tooltip: 'Duval County'
 		}
 	},
@@ -33,20 +34,22 @@ var navDuval = L.Toolbar2.Action.extend({
 var navClay = L.Toolbar2.Action.extend({
 	options: {
 		toolbarIcon: {
-			html: 'Clay County',
+			html: 'Clay&nbsp;County',
+			className: "cNav",
 			tooltip: 'Clay County'
 		}
 	},
 	
 	addHooks: function() {
-		map.setView([30.077,-81.801],12);
+		map.setView([30.077,-81.801],11);
 	}
 });
 
 var navStJohns = L.Toolbar2.Action.extend({
 	options: {
 		toolbarIcon: {
-			html: 'St. Johns County',
+			html: 'St.&nbsp;Johns&nbsp;County',
+			className: "cNav",
 			tooltip: 'St. Johns County'
 		}
 	},
@@ -59,7 +62,8 @@ var navStJohns = L.Toolbar2.Action.extend({
 var navNassau = L.Toolbar2.Action.extend({
 	options: {
 		toolbarIcon: {
-			html: 'Nassau County',
+			html: 'Nassau&nbsp;County',
+			className: "cNav",
 			tooltip: 'Nassau County'
 		}
 	},
@@ -72,7 +76,8 @@ var navNassau = L.Toolbar2.Action.extend({
 var navBaker = L.Toolbar2.Action.extend({
 	options: {
 		toolbarIcon: {
-			html: 'Baker County',
+			html: 'Baker&nbsp;County',
+			className: "cNav",
 			tooltip: 'Baker County'
 		}
 	},
@@ -85,7 +90,8 @@ var navBaker = L.Toolbar2.Action.extend({
 var navColumbia = L.Toolbar2.Action.extend({
 	options: {
 		toolbarIcon: {
-			html: 'Columbia County',
+			html: 'Columbia&nbsp;County',
+			className: "cNav",
 			tooltip: 'Columbia County'
 		}
 	},
@@ -98,7 +104,8 @@ var navColumbia = L.Toolbar2.Action.extend({
 var navUnion = L.Toolbar2.Action.extend({
 	options: {
 		toolbarIcon: {
-			html: 'Union County',
+			html: 'Union&nbsp;County',
+			className: "cNav",
 			tooltip: 'Union County'
 		}
 	},
@@ -111,7 +118,8 @@ var navUnion = L.Toolbar2.Action.extend({
 var navBradford = L.Toolbar2.Action.extend({
 	options: {
 		toolbarIcon: {
-			html: 'Bradford County',
+			html: 'Bradford&nbsp;County',
+			className: "cNav",
 			tooltip: 'Bradford County'
 		}
 	},
@@ -124,7 +132,8 @@ var navBradford = L.Toolbar2.Action.extend({
 var navPutnam = L.Toolbar2.Action.extend({
 	options: {
 		toolbarIcon: {
-			html: 'Putnam County',
+			html: 'Putnam&nbsp;County',
+			className: "cNav",
 			tooltip: 'Putnam County'
 		}
 	},
@@ -137,7 +146,8 @@ var navPutnam = L.Toolbar2.Action.extend({
 var navFlagler = L.Toolbar2.Action.extend({
 	options: {
 		toolbarIcon: {
-			html: 'Flagler County',
+			html: 'Flagler&nbsp;County',
+			className: "cNav",
 			tooltip: 'Flagler County'
 		}
 	},
@@ -150,7 +160,8 @@ var navFlagler = L.Toolbar2.Action.extend({
 var navAlachua = L.Toolbar2.Action.extend({
 	options: {
 		toolbarIcon: {
-			html: 'Alachua County',
+			html: 'Alachua&nbsp;County',
+			className: "cNav",
 			tooltip: 'Alachua County'
 		}
 	},
