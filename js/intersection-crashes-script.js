@@ -55,7 +55,7 @@ var navStJohns = L.Toolbar2.Action.extend({
 	},
 	
 	addHooks: function() {
-		map.setView([29.987,-81.482],11);
+		map.setView([29.887,-81.382],11);
 	}
 });
 
@@ -69,7 +69,7 @@ var navNassau = L.Toolbar2.Action.extend({
 	},
 	
 	addHooks: function() {
-		map.setView([30.563,-81.801],11);
+		map.setView([30.563,-81.601],10);
 	}
 });
 
@@ -83,7 +83,7 @@ var navBaker = L.Toolbar2.Action.extend({
 	},
 	
 	addHooks: function() {
-		map.setView([30.360,-82.394],11);
+		map.setView([30.360,-82.224],11);
 	}
 });
 
@@ -97,7 +97,7 @@ var navColumbia = L.Toolbar2.Action.extend({
 	},
 	
 	addHooks: function() {
-		map.setView([30.211,-82.907],10);
+		map.setView([30.211,-82.817],10);
 	}
 });
 
@@ -111,7 +111,7 @@ var navUnion = L.Toolbar2.Action.extend({
 	},
 	
 	addHooks: function() {
-		map.setView([30.033,-82.425],12);
+		map.setView([29.993,-82.325],12);
 	}
 });
 
@@ -125,7 +125,7 @@ var navBradford = L.Toolbar2.Action.extend({
 	},
 	
 	addHooks: function() {
-		map.setView([29.930,-82.372],11);
+		map.setView([29.930,-82.222],11);
 	}
 });
 
@@ -139,7 +139,7 @@ var navPutnam = L.Toolbar2.Action.extend({
 	},
 	
 	addHooks: function() {
-		map.setView([29.594,-81.912],11);
+		map.setView([29.594,-81.812],10);
 	}
 });
 
@@ -153,7 +153,7 @@ var navFlagler = L.Toolbar2.Action.extend({
 	},
 	
 	addHooks: function() {
-		map.setView([29.466,-81.422],11);
+		map.setView([29.466,-81.322],10);
 	}
 });
 
@@ -167,7 +167,7 @@ var navAlachua = L.Toolbar2.Action.extend({
 	},
 	
 	addHooks: function() {
-		map.setView([29.685,-82.479],11);
+		map.setView([29.685,-82.379],11);
 	}
 });
 

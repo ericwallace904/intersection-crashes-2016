@@ -66,4 +66,7 @@ var intersections = [{"County":"Duval","Intersection":"Beach Blvd and St Johns B
 {"County":"Alachua","Intersection":"NE 8TH Ave and NE Waldo Rd","Crashes":17,"latitude":29.6593086,"longitude":-82.3064546},
 {"County":"Alachua","Intersection":"SW 20TH Ave and SW 62ND Blvd","Crashes":16,"latitude":29.6399262,"longitude":-82.3981866},
 {"County":"Alachua","Intersection":"NW 62ND St and W Newberry Rd","Crashes":16,"latitude":29.6596849,"longitude":-82.4088665},
-{"County":"Alachua","Intersection":"NE 12TH Ave and NE Waldo Rd","Crashes":16,"latitude":29.6636246,"longitude":-82.3037787}]
+{"County":"Alachua","Intersection":"NE 12TH Ave and NE Waldo Rd","Crashes":16,"latitude":29.6636246,"longitude":-82.3037787},
+{"County":"Union","Intersection":"SR 100 and SR 121","Crashes":4,"latitude":30.023484,"longitude":-82.324228},
+{"County":"Union","Intersection":"SR 121 and SR 231","Crashes":5,"latitude":30.017986,"longitude":-82.3449},
+{"County":"Union","Intersection":"CR 18 and SR 121","Crashes":2,"latitude":29.946349,"longitude":-82.424799}]
