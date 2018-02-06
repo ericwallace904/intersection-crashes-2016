@@ -177,6 +177,21 @@ new L.Toolbar2.Control({
 	actions: [navAlachua,navBaker,navBradford,navClay,navColumbia,navDuval,navFlagler,navNassau,navPutnam,navStJohns,navUnion]
 }).addTo(map)
 
+var PinIcon = L.Icon.extend({
+	options: {
+		shadowUrl: 'images/pin-shadow.png',
+		iconSize: [38,80],
+		shadowSize: [70,24],
+		iconAnchor: [2,78],
+		shadowAnchor: [5,12],
+		popupAnchor: [15,-63]
+	}
+});
+
+var redPin = new PinIcon({iconUrl: 'images/pin-red.png'}), 
+	orangePin = new PinIcon({iconUrl: 'images/pin-orange.png'}),
+	yellowPin = new PinIcon({iconUrl: 'images/pin-yellow.png'});
+
 for (var num = 0; num < intersections.length; num++) {
 	var intersection = intersections[num];
 	var intersection_lat = intersection["latitude"];
@@ -185,7 +200,17 @@ for (var num = 0; num < intersections.length; num++) {
 	var intersection_county = intersection["County"];
 	var intersection_crashes = intersection["Crashes"];
 	
-	var marker = L.marker([intersection_lat,intersection_long]).addTo(map);
+	var pin;
+	
+	if (intersection_crashes >= 30) {
+		pin = redPin;
+	} else if (intersection_crashes >= 15) {
+		pin = orangePin;
+	} else {
+		pin = yellowPin;
+	}
+		
+	var marker = L.marker([intersection_lat,intersection_long],{icon:pin}).addTo(map);
 	
 	var popup_html = '<h3>' + intersection_name + '</h3>';
 	popup_html += '<div><strong>Crashes in 2016:</strong> ' + intersection_crashes + '</div>';
